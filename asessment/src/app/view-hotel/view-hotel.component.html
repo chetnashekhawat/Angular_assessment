@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <h3>Click here to take a glance at all the available hotels</h3>
+    <button class="btn btn-primary" (click)="viewAllHotels()">View all Hotels</button>
+  </div>
+  
+  <div class="container mt-4">
+    <div *ngFor="let i of allHotels" class="card mb-3">
+      <div class="card-body">
+        <h2 class="card-title">{{i.hid}}-{{ i.hname }}</h2>
+        <p class="card-text">Location: {{ i.hlocation }}</p>
+        <p class="card-text">Price: {{ i.hprice }}</p>
+        <p class="card-text">Ratings: {{ i.hratings }}</p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,31 @@
+<div class="container">
+    <h1><u>Add Hotels</u></h1>
+    <br>
+    <div class="form-group">
+      <label for="hotelName">Name of the Hotel-</label>
+      <input type="text" class="form-control" id="hotelName" [(ngModel)]="addHotel.hname" placeholder="Hotel Name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="hotelLocation">Location of the Hotel-</label>
+      <input type="text" class="form-control" id="hotelLocation" [(ngModel)]="addHotel.hlocation" placeholder="Hotel Location">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="hotelPrice">Hotel Price-</label>
+      <input type="number" class="form-control" id="hotelPrice" [(ngModel)]="addHotel.hprice" placeholder="Hotel Price">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="hotelRating">Hotel Rating-</label>
+      <input type="text" class="form-control" id="hotelRating" [(ngModel)]="addHotel.hratings" placeholder="Hotel Ratings">
+    </div>
+    <br>
+    <br>
+    <button class="btn btn-primary" (click)="AddHotel()">Add Hotel</button>
+
+    
+  <br><br>
+  <p *ngIf="hotelAddedMessage" class="custom-message">{{ hotelAddedMessage }}</p>
+</div>
+  

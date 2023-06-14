@@ -1,0 +1,9 @@
+.square-div {
+    width: 3000px;
+    height: 600px;
+    background-color: rgb(148, 163, 189);
+    margin-left: 18%;
+    -webkit-margin-top-collapse: 70%;
+
+  }
+  

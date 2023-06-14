@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #d1c5c5;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+    button{
+        color: white;
+        background-color: cadetblue;
+        font-size:x-large;
+        margin-left: 42%;
+        font-style:italic;
+        
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+      <div >
+        <label for="username">Username:</label>
+        <input type="text" id=""[(ngModel)]="name" >
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id=""[(ngModel)] ="password" >
+      </div>
+      <button (click)="login()">Login</button>
+  </div>
+
+  
+</body>
+</html>

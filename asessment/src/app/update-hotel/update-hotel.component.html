@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Add the Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class=" square-div container mt-4">
+  <h3>Update the Hotel of Your Choice</h3>
+  <div class="form-group">
+    <label for="hotelId">Hotel ID:</label>
+    <input type="number" class="form-control" [(ngModel)]="hid" id="hotelId" placeholder="Enter ID">
+  </div>
+
+  <div class="form-group">
+    <label for="hotelName">Hotel Name:</label>
+    <input type="text" class="form-control" [(ngModel)]="addHotel.hname" id="hotelName" placeholder="Hotel Name">
+  </div>
+
+  <div class="form-group">
+    <label for="hotelLocation">Hotel Location:</label>
+    <input type="text" class="form-control" [(ngModel)]="addHotel.hlocation" id="hotelLocation" placeholder="Hotel Location">
+  </div>
+
+  <div class="form-group">
+    <label for="hotelPrice">Hotel Price:</label>
+    <input type="number" class="form-control" [(ngModel)]="addHotel.hprice" id="hotelPrice" placeholder="Hotel Price">
+  </div>
+
+  <div class="form-group">
+    <label for="hotelRatings">Hotel Ratings:</label>
+    <input type="text" class="form-control" [(ngModel)]="addHotel.hratings" id="hotelRatings" placeholder="Hotel Ratings">
+  </div>
+
+  <button class="btn btn-primary" (click)="updateHotel()">Update</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

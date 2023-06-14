@@ -1,0 +1,13 @@
+<div class=" square-div container mt-4">
+    <h3>Delete hotel information using respective Hotel Ids</h3>
+    <div class="form-group">
+      <label for="deleteHotelId">Hotel ID:</label>
+      <input type="number" class="form-control" [(ngModel)]="deleteHotelId" id="deleteHotelId" placeholder="Enter hotel ID">
+    </div>
+  
+    <button class="btn btn-primary" (click)="deleteHotel()">Delete</button>
+      
+  <br><br>
+  <p *ngIf="hotelAddedMessage" class="custom-message">{{ hotelAddedMessage }}</p>
+  </div>
+  

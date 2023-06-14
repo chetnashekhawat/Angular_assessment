@@ -1,0 +1,32 @@
+<h1>News-Letter Subscription</h1>
+
+<div class="box"><form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm)">
+   <br>   
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required email #emailInput="ngModel" >
+        <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="error">
+          <div *ngIf="emailInput.errors?.['required']" class="text-danger">Email is required.</div>
+          <div *ngIf="emailInput.errors?.['email']" class="text-danger1">Invalid email format.</div>
+        </div>
+      </div>
+      <br>
+  
+  <label>
+    <input type="checkbox" required name="termsAccepted" [(ngModel)]="termsAccepted">
+    Accept Terms and Conditions
+  </label>
+  <br>
+  <span *ngIf="loginForm.submitted && !termsAccepted" class="text-danger">You must accept the Terms and Conditions</span>
+  <br>
+  
+  <button [disabled]="loginForm.invalid || !termsAccepted">Submit</button>
+</form>
+</div>
+<br>
+
+
+<div *ngIf="loginForm.submitted && termsAccepted" >
+   <h3 style="color: rgb(22, 107, 40);"> Successfully subscribed {{ email }} with the newsletter!! </h3>
+  </div>
+

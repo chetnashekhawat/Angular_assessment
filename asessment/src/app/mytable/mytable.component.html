@@ -1,0 +1,17 @@
+<table border="3">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of nature">
+        <td>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p *ngFor="let person of nature">{{ person.name }} - {{ person.age }}</p>
+  
